@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Final ILM</title>
+  
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ILM Student Accommodation Application</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: white;
+        }
+        header {
+            text-align: center;
+            padding: 20px 0;
+        }
+        header img {
+            height: 120px;
+            margin-bottom: 10px;
+        }
+        .container {
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 8px;
+            background-color: white;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+            width: 80%;
+            max-width: 800px;
+            page-break-inside: avoid;
+        }
+        h1, h2, h3 {
+            color: #2a2a72;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+        label {
+            display: block;
+            margin: 10px 0 5px;
+            color: #333;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+        input[type="radio"] {
+            width: auto;
+            margin-right: 10px;
+        }
+        ul {
+            margin: 0 0 15px 20px;
+            padding: 0;
+        }
+        .button {
+            background-color: #2a2a72;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 4px;
+            text-align: center;
+            display: block;
+            margin: 20px auto;
+            width: fit-content;
+        }
+        .button:hover {
+            background-color: #4545a2;
+        }
+        @media print {
+            header {
+                color: black;
+            }
+            .container {
+                margin: 0;
+                padding: 15px;
+                box-shadow: none;
+            }
+            .button {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="https://i.ibb.co/rMCs7mm/473148050-10160452160655951-3047339032063400229-n.jpg" alt="ILM Logo">
+        <h1>ILM Student Accommodation Application</h1>
+    </header>
+
+    <div class="container" style="padding-bottom: 40px;">
+        <h3>Student Accommodation Overview</h3>
+        <p style="margin-bottom: 20px;">ILM Student Halls is part of a group of Halls which are designed with a focus on community values and respectful living. Our facilities prioritize a harmonious environment, reflecting Islamic principles that promote mutual respect, personal well-being, and community support.</p>
+        <ul style="margin-bottom: 20px;">
+            <li><strong>Inclusive Environment:</strong> We foster a welcoming atmosphere for students from all backgrounds.</li>
+            <li><strong>Respectful Living:</strong> Our guidelines encourage respect for all individuals and maintain a peaceful living space.</li>
+            <li><strong>Wellness-Oriented:</strong> Facilities support physical, mental, and emotional well-being, including spaces for reflection and prayer.</li>
+            <li><strong>Sustainable Practices:</strong> Environmentally friendly practices create a sustainable living environment.</li>
+            <li><strong>Holistic Development:</strong> Programs support academic success and personal growth.</li>
+            <li><strong>Healthy Living:</strong> Halal food provisions and healthy dietary options promote well-being.</li>
+            <li><strong>Community Support:</strong> Emphasis on a sense of community inspired by Islamic values.</li>
+            <li><strong>Modesty and Privacy:</strong> Living spaces respect privacy and modesty.</li>
+            <li><strong>Safe and Secure:</strong> Our premises are equipped with 24/7 security and emergency support systems.</li>
+            <li><strong>Technology Ready:</strong> High-speed internet and tech-friendly spaces ensure seamless academic and personal connectivity.</li>
+            <li><strong>Cultural Sensitivity:</strong> We create an environment that respects and celebrates diverse cultural and religious practices.</li>
+            <li><strong>Accessible Facilities:</strong> Inclusive infrastructure accommodates students with disabilities, ensuring equal access and comfort.</li>
+            <li><strong>Activity Zones:</strong> Recreational areas support a balanced and vibrant student life.</li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <h2>Application Form</h2>
+        <h3>Personal Information</h3>
+        <label for="full-name">Full Name:</label>
+        <input type="text" id="full-name" name="full-name">
+
+        <label for="dob">Date of Birth:</label>
+        <input type="text" id="dob" name="dob">
+
+        <label>Gender:</label>
+        <input type="radio" id="male" name="gender" value="male"> Male
+        <input type="radio" id="female" name="gender" value="female"> Female
+        <input type="radio" id="other" name="gender" value="other"> Other
+
+        <label for="nationality">Nationality:</label>
+        <input type="text" id="nationality" name="nationality">
+
+        <label for="address">Home Address:</label>
+        <textarea id="address" name="address" rows="3"></textarea>
+    </div>
+
+    <div class="container">
+        <h3>Academic Information</h3>
+        <label for="university">University:</label>
+        <input type="text" id="university" name="university">
+
+        <label for="course">Course of Study:</label>
+        <input type="text" id="course" name="course">
+
+        <label for="student-id">Student ID Number:</label>
+        <input type="text" id="student-id" name="student-id">
+
+        <label>Program Type:</label>
+        <input type="radio" name="program" value="undergraduate"> Full-time Undergraduate (50 weeks)
+        <input type="radio" name="program" value="exchange"> Exchange Programme
+        <br><input type="radio" name="program" value="masters"> Full-time Masters (50 weeks)
+        <input type="radio" name="program" value="other"> Other
+        <input type="text" name="program-other">
+    </div>
+
+    <div class="container">
+        <h3>Accommodation Details</h3>
+        <label>Preferred Accommodation Type:</label>
+        <div style="margin-bottom: 15px;">
+            <input type="radio" name="accommodation" value="single-no-wc"> Single Room – no WC (£140/week)<br>
+            <input type="radio" name="accommodation" value="single-wc"> Single Room – with WC (£150/week)<br>
+            <input type="radio" name="accommodation" value="single-ensuite"> Single Room – with en-suite (£175/week)<br>
+            <input type="radio" name="accommodation" value="double-wc"> Double Room – with WC (£175/week)<br>
+        </div>
+
+        <label for="move-in">Preferred Move-in Date:</label>
+        <input type="text" id="move-in" name="move-in" style="margin-bottom: 15px;">
+
+        <label>Preferred Lease Duration:</label>
+        <div>
+            <input type="radio" name="lease-duration" value="6-months"> 6 Months<br>
+            <input type="radio" name="lease-duration" value="12-months"> 12 Months<br>
+            <input type="radio" name="lease-duration" value="other"> Other<br>
+            <input type="text" name="other-lease-duration" style="margin-top: 5px;">
+        </div>
+    </div>
+
+    <div class="container">
+        <h3>Special Requirements</h3>
+        <label for="accessibility">Accessibility Needs:</label>
+        <textarea id="accessibility" name="accessibility" rows="3"></textarea>
+
+        <label for="medical">Medical Conditions:</label>
+        <textarea id="medical" name="medical" rows="3"></textarea>
+
+        <label for="dietary">Dietary Restrictions:</label>
+        <textarea id="dietary" name="dietary" rows="3"></textarea>
+
+        <h3>Declaration</h3>
+        <p><strong>N.B. Declaration:</strong> I understand that this application DOES NOT GUARANTEE an offer of accommodation being made. I have read and understood the attached information about the contract and how to apply. I have kept this for future reference. <strong>DO NOT SEND ANY MONEY WITH THIS FORM.</strong></p>
+        <p>I hereby declare that the information provided in this application is true and correct to the best of my knowledge.</p>
+        <label for="signature">Signature:</label>
+        <input type="text" id="signature" name="signature">
+
+        <label for="date">Date:</label>
+        <input type="text" id="date" name="date">
+
+        <button type="button" class="button" onclick="window.print()">Print Application</button>
+    </div>
+
+    <footer style="background-color: #2a2a72; color: white; padding: 20px; text-align: center;">
+        <p>&copy; 2025 ILM Student Halls. All rights reserved.</p>
+        <p>Designed with care for our community.</p>
+    </footer>
+</body>
+</html>
+<!-- partial -->
+  
+</body>
+</html>
